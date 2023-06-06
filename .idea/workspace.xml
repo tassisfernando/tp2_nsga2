@@ -7,28 +7,29 @@
     <list default="true" id="caecd45c-7b53-4dc1-8940-7edfa80acec6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/CrowdingDistance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/FNDS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/NSGA2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Rascunho.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1000_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1000_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_100_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_100_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_100_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_100_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_1_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_1_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_20_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_20_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_20_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_20_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_40_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_40_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_40_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_40_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_60_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_60_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_60_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_60_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_80_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_80_genes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/gen_80_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_80_values.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Individual.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IndividualComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/NSGA2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_100_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_100_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_20_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_20_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_40_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_40_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_60_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_60_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_80_genes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_80_values.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CrowdingDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CrowdingDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/FNDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/FNDS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GenerateFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GenerateFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IndividuoComparador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IndividuoComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Ponto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mutation/BLXAlpha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mutation/BLXAlpha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mutation/Mutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mutation/Mutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.Main" />
+    <configuration name="NSGA2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.NSGA2" />
       <module name="tp2_nsga2_tassis" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.NSGA2" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +101,7 @@
       <workItem from="1685390577623" duration="24000" />
       <workItem from="1686080071927" duration="1058000" />
       <workItem from="1686081369097" duration="249000" />
-      <workItem from="1686081741068" duration="46000" />
+      <workItem from="1686081741068" duration="1788000" />
     </task>
     <servers />
   </component>

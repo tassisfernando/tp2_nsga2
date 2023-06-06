@@ -4,14 +4,14 @@ import java.util.List;
 
 public class CrowdingDistance {
 
-    public List<Individuo> cdAvaliar(List<Individuo> border){
+    public List<Individual> evaluate(List<Individual> border){
         int borderSize = border.size();
 
-        for (Individuo individual: border) {
+        for (Individual individual: border) {
             individual.setCrowdingDistance(0);
         }
 
-        Individuo individual0 = border.get(0);
+        Individual individual0 = border.get(0);
 
         int objectives = individual0.getAvaliation().length;
         for (int i = 0; i < objectives; i++) {
@@ -20,8 +20,8 @@ public class CrowdingDistance {
             border.get(borderSize - 1).setCrowdingDistance(Double.POSITIVE_INFINITY);
 
             for (int j = 1; j < borderSize - 1; j++) {
-                Individuo previous = border.get(j-1);
-                Individuo later = border.get(j+1);
+                Individual previous = border.get(j-1);
+                Individual later = border.get(j+1);
 
                 double aux = (later.getAvaliation()[i] - previous.getAvaliation()[i])/
                         (border.get(borderSize - 1).getAvaliation()[i] - border.get(0).getAvaliation()[i]);
@@ -31,16 +31,16 @@ public class CrowdingDistance {
             }
         }
 
-        border.sort(new IndividuoComparador());
+        border.sort(new IndividuoComparator());
 
         return border;
     }
 
-    private void sort(List<Individuo> border, int objectives){
+    private void sort(List<Individual> border, int objectives){
         for (int i = 0; i < border.size() - 1; i++) {
             for (int j = i + 1; j < border.size(); j++) {
                 if(border.get(i).getAvaliation()[objectives] > border.get(j).getAvaliation()[objectives]){
-                    Individuo aux = border.get(i);
+                    Individual aux = border.get(i);
                     border.set(i, border.get(j));
                     border.set(j, aux);
                 }

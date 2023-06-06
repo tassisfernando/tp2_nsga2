@@ -49,12 +49,12 @@ public class BLXAlpha {
 
         return children;
     }
-        public double repairSolution(double value, double lowerBound, double upperBound){
-            if(value < lowerBound){
-                value = lowerBound;
-            }else if(value > upperBound){
-                value = upperBound;
-            }
-            return value;
+    public double repairSolution(double value, double lowerBound, double upperBound){
+        if(value < lowerBound){
+            value = lowerBound;
+        }else if(value > upperBound){
+            value = upperBound;
         }
+        return value;
+    }
 }

@@ -5,68 +5,68 @@ import java.util.List;
 
 public class FNDS {
 
-    public static List<List<Individuo>> execute(List<Individuo> individuos){
-        List<Ponto> pontos = new ArrayList<>(individuos.size());
+    public static List<List<Individual>> execute(List<Individual> individuals){
+        List<Point> points = new ArrayList<>(individuals.size());
 
-        for (Individuo individuo : individuos) {
-            pontos.add(new Ponto(individuo));
+        for (Individual individual : individuals) {
+            points.add(new Point(individual));
         }
 
-        List<List<Ponto>> fronteiras = new ArrayList<>();
-        List<Ponto> fronteira_1 = new ArrayList<>();
-        for (int i = 0; i < pontos.size(); i++) {
-            Ponto ponto_p = pontos.get(i);
-            ponto_p.S = new ArrayList<>();
-            ponto_p.n = 0;
-            for (int j = 0; j < pontos.size(); j++) {
+        List<List<Point>> bounds = new ArrayList<>();
+        List<Point> bound_1 = new ArrayList<>();
+        for (int i = 0; i < points.size(); i++) {
+            Point point_p = points.get(i);
+            point_p.S = new ArrayList<>();
+            point_p.n = 0;
+            for (int j = 0; j < points.size(); j++) {
                 if (i != j){
-                   Ponto ponto_q = pontos.get(j);
-                   if (domina(ponto_p.individuo.getAvaliation(),ponto_q.individuo.getAvaliation())){
-                        ponto_p.S.add(ponto_q);
-                   }else if (domina(ponto_q.individuo.getAvaliation(),ponto_p.individuo.getAvaliation())){
-                       ponto_p.n++;
-                   }
+                    Point point_q = points.get(j);
+                    if (dominates(point_p.individual.getAvaliation(), point_q.individual.getAvaliation())){
+                        point_p.S.add(point_q);
+                    }else if (dominates(point_q.individual.getAvaliation(), point_p.individual.getAvaliation())){
+                        point_p.n++;
+                    }
                 }
             }
-            if(ponto_p.n == 0) {
-                ponto_p.rank = 1;
-                fronteira_1.add(ponto_p);
+            if(point_p.n == 0) {
+                point_p.rank = 1;
+                bound_1.add(point_p);
             }
         }
-        fronteiras.add(fronteira_1);
+        bounds.add(bound_1);
 
         int i = 0;
-        List<Ponto> fronteira_i = fronteiras.get(i);
+        List<Point> bound_i = bounds.get(i);
 
-        while (fronteira_i.size() != 0){
+        while (bound_i.size() != 0){
 
-            List<Ponto> Q = new ArrayList<>();
+            List<Point> Q = new ArrayList<>();
 
-            for (Ponto ponto_i : fronteira_i) {
-                List<Ponto> Sp = ponto_i.S;
-                for (Ponto ponto_q : Sp) {
-                    ponto_q.n--;
-                    if (ponto_q.n == 0){
-                        ponto_q.rank = i+1;
-                        Q.add(ponto_q);
+            for (Point point_i : bound_i) {
+                List<Point> Sp = point_i.S;
+                for (Point point_q : Sp) {
+                    point_q.n--;
+                    if (point_q.n == 0){
+                        point_q.rank = i+1;
+                        Q.add(point_q);
                     }
                 }
             }
             i++;
-            fronteira_i = Q;
-            fronteiras.add(fronteira_i);
+            bound_i = Q;
+            bounds.add(bound_i);
         }
 
-        List<List<Individuo>> finaList = new ArrayList<List<Individuo>>();
+        List<List<Individual>> finaList = new ArrayList<List<Individual>>();
 
-        for (int j = 0; j < fronteiras.size(); j++) {
-            List<Ponto> fronteira_j = fronteiras.get(j);
+        for (int j = 0; j < bounds.size(); j++) {
+            List<Point> fronteira_j = bounds.get(j);
             if (fronteira_j.size() > 0){
-                List<Individuo> Find = new ArrayList<>();
+                List<Individual> Find = new ArrayList<>();
 
                 for (int k = 0; k < fronteira_j.size(); k++) {
-                    Ponto p = fronteira_j.get(k);
-                    Individuo ind = p.individuo;
+                    Point p = fronteira_j.get(k);
+                    Individual ind = p.individual;
                     Find.add(ind);
                 }
                 finaList.add(Find);
@@ -75,7 +75,7 @@ public class FNDS {
         }
         return finaList;
     }
-    public static boolean domina(double[] avalInd,double[] avalInd2){
+    public static boolean dominates(double[] avalInd, double[] avalInd2){
         boolean domina = false;
         for (int i = 0; i < avalInd.length; i++) {
             if (avalInd[i] > avalInd2[i]) {
