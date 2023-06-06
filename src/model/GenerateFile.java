@@ -1,17 +1,12 @@
-package utils;
-
-import model.Individual;
-
+package model;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-
-public class FileUtils {
-
-    public static void createFile(String path, List<Individual> individuals, boolean isFunctionValues) throws IOException {
+public class GenerateFile {
+    public static void createFile(String path, List<Individuo> individuals, boolean isFunctionValues) throws IOException {
         File file = new File(path);
         if(!file.exists()){
             file.createNewFile();
@@ -19,21 +14,18 @@ public class FileUtils {
 
         FileWriter fileWriter = new FileWriter(file);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-        for (Individual individual : individuals) {
+        for (Individuo individual : individuals) {
             if (isFunctionValues) {
-                bufferedWriter.write(replaceBracket(Arrays.toString(individual.getFunctionValues())));
+                String row = Arrays.toString(individual.getAvaliation()).replace('[','(').replace(']',')');
+                bufferedWriter.write(row);
                 bufferedWriter.newLine();
             } else {
-                bufferedWriter.write(replaceBracket(Arrays.toString(individual.getGenes())));
+                String row = Arrays.toString(individual.getGenes()).replace('[','(').replace(']',')');
+                bufferedWriter.write(row);
                 bufferedWriter.newLine();
             }
         }
         bufferedWriter.close();
         fileWriter.close();
-    }
-
-    public static String replaceBracket(String string) {
-        string = string.replace("[", "(");
-        return string.replace("]", ")");
     }
 }

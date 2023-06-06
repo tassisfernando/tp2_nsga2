@@ -2,10 +2,10 @@ package model;
 
 import java.util.Comparator;
 
-public class IndividualComparator implements Comparator<Individual> {
-
+public class IndividuoComparador implements Comparator<Individuo> {
     @Override
-    public int compare(Individual i1, Individual i2) {
+    public int compare(Individuo i1, Individuo i2) {
         return Double.compare(i2.getCrowdingDistance(), i1.getCrowdingDistance());
     }
+
 }

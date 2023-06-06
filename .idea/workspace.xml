@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caecd45c-7b53-4dc1-8940-7edfa80acec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp2_nsga2_tassis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/CrowdingDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/FNDS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/NSGA2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Rascunho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1000_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1000_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1000_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_100_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_100_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_100_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_100_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_1_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_1_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_20_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_20_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_20_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_20_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_40_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_40_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_40_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_40_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_60_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_60_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_60_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_60_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_80_genes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_80_genes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/gen_80_values.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/gen_80_values.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Individual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IndividualComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FileUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,18 +55,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
+      <module name="tp2_nsga2_tassis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +96,10 @@
       <option name="presentableId" value="Default" />
       <updated>1684091122326</updated>
       <workItem from="1684091123596" duration="4409000" />
+      <workItem from="1685390577623" duration="24000" />
+      <workItem from="1686080071927" duration="1058000" />
+      <workItem from="1686081369097" duration="249000" />
+      <workItem from="1686081741068" duration="46000" />
     </task>
     <servers />
   </component>
